@@ -64,7 +64,7 @@ def login_view(request):
 def logout_view(request):
     logout(request)
     return redirect('login')
-
+"""
 def suscribe(request):
     form = UpgradeAccountForm()
     if request.method == 'POST':
@@ -74,7 +74,7 @@ def suscribe(request):
         user.save()
         return redirect('logout')
     return render(request, 'unsuscribed/suscribe/suscribe.html', {'form':form})
-
+"""
 
 
 #Aqui empieza parte de Hugo

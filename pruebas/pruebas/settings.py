@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'pruebas.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'bdd_proyecto2',
+        'NAME': 'bdd_proyecto21',
         'USER': 'postgres',
         'PASSWORD': 'Krewella2001',
         'HOST': '127.0.0.1',

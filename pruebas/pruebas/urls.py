@@ -40,7 +40,6 @@ urlpatterns = [
     path('edit3/<int:id>', edit3),  
     path('update3/<int:id>', update3),  
     path('delete3/<int:id>', destroy3),
-    path('upgrade/', suscribe, name='suscribe')
 
 
 ]

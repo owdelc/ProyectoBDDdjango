@@ -20,3 +20,12 @@ class Music(models.Model):
     class Meta:
         db_table = "songs"
         # app_label="Proyecto2
+
+class Registro(models.Model):
+    accion = models.CharField(max_length=100)
+    tabla = models.CharField(max_length=100)
+    fecha = models.DateTimeField(auto_now_add=True)
+
+
+    class Meta:
+        db_table = "registro"
