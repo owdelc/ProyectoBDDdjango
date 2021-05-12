@@ -1,0 +1,98 @@
+{% extends "artista/base.html" %}
+ 
+{% block title %}Song Records{% endblock title %}
+ 
+{% block content %}
+ <div class="col-md-12">
+        {% comment %} <h4>Song List</h4> <span><a href="/addnew2" class="btn btn-primary">Add New Record</a></span>   {% endcomment %}
+        <div class="table-responsive">
+            <form method="POST">
+            <hr/>
+
+            <table id="example" class="display nowrap" style="width:100%">
+                <tr>
+                    <th>Artista</th>
+                    <th>Reproducciones</th>
+                    <th>Ganancias</th>
+                </tr>
+                
+                <tr>
+                    <td>Petit Biscuit</td>
+                    <td>2767</td>
+                    <td>249.03</td>
+                </tr>
+
+                <tr>
+                    <td>Ed Sheeran</td>
+                    <td>1960</td>
+                    <td>176.40</td>
+                </tr>
+
+                <tr>
+                    <td>Danny Ocean</td>
+                    <td>1942</td>
+                    <td>174.78</td>
+                </tr>
+
+                <tr>
+                    <td>Yorghaki</td>
+                    <td>1561</td>
+                    <td>140.49</td>
+                </tr>
+
+                <tr>
+                    <td>Odesza</td>
+                    <td>1399</td>
+                    <td>125.91</td>
+                </tr>
+
+                <tr>
+                    <td>Myke Towers</td>
+                    <td>1250</td>
+                    <td>112.50</td>
+                </tr>
+
+                <tr>
+                    <td>Justin Bieber</td>
+                    <td>1104</td>
+                    <td>99.36</td>
+                </tr>
+                
+                <tr>
+                    <td>Duke Dumon</td>
+                    <td>894</td>
+                    <td>80.46</td>
+                </tr>
+
+                <tr>
+                    <td>Hillsong</td>
+                    <td>855</td>
+                    <td>76.95</td>
+                </tr>
+
+                <tr>
+                    <td>Bad Bunny</td>
+                    <td>810</td>
+                    <td>72.90</td>
+                </tr>
+
+                <tr>
+                    <td>Un Corazon</td>
+                    <td>700</td>
+                    <td>63.00</td>
+                </tr>
+
+                <tr>
+                    <td>OneRepublic</td>
+                    <td>500</td>
+                    <td>45.00</td>
+                </tr>
+
+                
+            
+            </table>
+            </form>
+                
+        </div>
+    </div>
+{% endblock content %}
