@@ -1,6 +1,6 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
-from .models import CustomUser, Music
+from .models import CustomUser, Reports
 
 class CustomUserCreationForm(UserCreationForm):
     class Meta:
@@ -8,16 +8,17 @@ class CustomUserCreationForm(UserCreationForm):
         fields = ['username', 'password1', 'password2']
  
 
-class MusicForm(forms.ModelForm):  
+class ReportsForm(forms.ModelForm):
     class Meta:  
-        model = Music
-        fields = ['name', 'album', 'artista', 'year','genero'] #https://docs.djangoproject.com/en/3.0/ref/forms/widgets/
-        widgets = { 'name': forms.TextInput(attrs={ 'class': 'form-control' }), 
-                    'album': forms.TextInput(attrs={ 'class': 'form-control' }),
-                    'artista': forms.TextInput(attrs={ 'class': 'form-control' }),
-                    'year': forms.TextInput(attrs={ 'class': 'form-control' }),
-                    'genero': forms.TextInput(attrs={ 'class': 'form-control' }),
-      }
+        model = Reports
+        fields = ['especie', 'lugar', 'region','link','ubicacion'] #https://docs.djangoproject.com/en/3.0/ref/forms/widgets/
+        widgets = { 'especie': forms.TextInput(attrs={ 'class': 'form-control' }), 
+                    'lugar': forms.TextInput(attrs={ 'class': 'form-control' }),
+                    'region': forms.TextInput(attrs={ 'class': 'form-control' }),
+                    'link': forms.TextInput(attrs={ 'class': 'form-control' }),
+                    'ubicacion': forms.TextInput(attrs={ 'class': 'form-control' }),
+        }
+
 
 class UpgradeAccountForm(forms.ModelForm):
     class Meta:

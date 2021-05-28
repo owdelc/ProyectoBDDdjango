@@ -16,20 +16,16 @@
    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
       <a class="navbar-brand" href="#">
-          <img src="{% static 'logoAstra.png' %}" width="60" height="60" class="d-inline-block align-top" alt="">
+          <img src="{% static 'logoCracks.png' %}" width="200" height="80" style="top: -5px " class="d-inline-block align-top" alt="">
         </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="{% url 'adashboard' %}">Dashboard <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="{% url 'queryprueba' %}">Report 1</a>
-          <a class="nav-item nav-link" href="{% url 'queryprueba2' %}">Report 2</a>
-          <a class="nav-item nav-link" href="{% url 'queryprueba3' %}">Report 3</a>
-          <a class="nav-item nav-link" href="{% url 'queryprueba4' %}">Report 4</a>
-          <a class="nav-item nav-link" href="{% url 'regalias' %}">Regalias</a>
-          <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
+          <a class="nav-item nav-link active p-5 mt-4" style="font-size: 200%;" href="{% url 'edashboard' %}">Dashboard <span class="sr-only">(current)</span></a>
+          
+          <a class="nav-item nav-link p-5 mt-4" style="font-size: 200%;" href="{% url 'logout' %}">Logout</a>
         </div>
       </div>
     </nav>

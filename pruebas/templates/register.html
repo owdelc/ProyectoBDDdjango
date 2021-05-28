@@ -11,7 +11,30 @@
     <div class="container text-center p-5 mt-5">
         <form action="" method="POST">
             {% csrf_token %}
-            {{form.as_p}}
+            <div>
+                <a style="color: white">Nomobre de usuario</a>
+            </div>
+            {{form.username}}
+            <div>
+                <a style="color: white">Se requieren 150 caracteres o menos. Letras, digitos y @.</a>
+            </div>
+            <div style="margin-top: 4;">
+                <a style="color: white">Contraseña</a>
+            </div>
+            {{form.password1}}
+            <div>
+                <a style="color: white">Tu contraseña no puede ser parecida a tu información personal.</a> <br />
+                <a style="color: white">Tu contraseña tiene que tener al menos 8 caracteres.</a> <br />
+                <a style="color: white">Tu contraseña no tiene que ser parecida a las que usas normalmente.</a> <br />
+                <a style="color: white">Tu contraseña no tiene que ser completamente numérica.</a>
+            </div>
+            <div style="margin-top: 4;">
+                <a style="color: white">Confirma tu contraseña</a>
+            </div>
+            {{form.password2}}
+            <div>
+                <a style="color: white">Ingresa la misma contraseña de antes, para poder verificarla.</a>
+            </div>
             <button type="submit" class="btn-success">Sign Up</button>
         </form> 
         </div>

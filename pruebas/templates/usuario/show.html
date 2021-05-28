@@ -4,31 +4,27 @@
  
 {% block content %}
  <div class="col-md-12">
-        {% comment %} <h4>Song List</h4> <span><a href="/addnew2" class="btn btn-primary">Add New Record</a></span>   {% endcomment %}
+        <h4>Song List</h4> <span><a href="/addnew2" class="btn btn-primary">Add New Record</a></span> 
         <div class="table-responsive">
             <table id="bootstrapdatatable" class="table table-striped table-bordered" width="100%">
                 <thead>
                     
-                    <th>ID</th>
-                    <th>Song Name</th>
-                    <th>Album name</th>
-                    <th>Artist Name</th>
-                    <th>Year</th>
-                    <th>Genero</th>
+                    <th>Especie</th>
+                    <th>Lugar</th>
+                    <th>Region</th>
                     <th>Link</th>
+                    <th>Ubicacion</th>
                     
                  </thead>
        <tbody>
-       {% for song in songs %}  
+       {% for report in reports %}  
         <tr>  
          
-         <td>{{ song.id }}</td>  
-         <td>{{ song.name }}</td>  
-         <td>{{ song.album }}</td>  
-         <td>{{ song.artista }}</td>  
-         <td>{{ song.year }}</td>  
-         <td>{{ song.genero }}</td>  
-         <td><a href="{{song.link}}" target="_blank"><button>Abrir</button></a></td>
+         <td>{{ report.especie }}</td>  
+         <td>{{ report.lugar }}</td>  
+         <td>{{ report.region }}</td> 
+         <td><a href="{{report.link}}" target="_blank"><button>Abrir</button></a></td>
+         <td><a href="{{report.ubicacion}}" target="_blank"><button>Abrir</button></a></td>
     
     
         </tr>  

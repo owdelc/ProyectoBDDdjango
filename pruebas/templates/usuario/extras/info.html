@@ -1,0 +1,45 @@
+{% extends "usuario/base.html" %}
+
+
+!DOCTYPE html>  
+<html lang="en">  
+<head>  
+<meta charset="UTF-8">  
+<title>{% block title %}{% endblock %}</title>
+{% load static %}  
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+</head> 
+{% block content %}
+<body>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="{% static 'pics/F2.png' %}" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Especies invasoras, una amenaza a la biodiversidad mundial</h5>
+                      <p class="card-text">En la Patagonia no existían los castores. Pero décadas atrás, una veintena de parejas fueron llevadas hasta allí para iniciar el negocio peletero. Hoy se han convertido en una plaga que amenaza la biodiversidad de la zona.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class = "col-md-4"></div>
+            <div class = "col-md-4"></div>
+
+
+    </div>
+
+
+
+
+    
+
+</body> 
+{% endblock content %}
+</html>

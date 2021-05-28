@@ -9,65 +9,41 @@ import pghistory
 # Create your models here.
 
 
-#@pghistory.track(pghistory.AfterInsertOrUpdate('CustomUser'))
 class CustomUser(AbstractUser):
-    is_suscribed = models.BooleanField(default=False)
-    is_artist = models.BooleanField(default=False)
-    is_moderatorA = models.BooleanField(default=False)
-    is_moderatorB = models.BooleanField(default=False)
-    history = HistoricalRecords()
+    is_expert = models.BooleanField(default=False)
+    
 
 
-#@pghistory.track(pghistory.AfterInsertOrUpdate('Music'))
-class Music(models.Model):
-    name = models.CharField(max_length=100)
-    album = models.CharField(max_length=100)
-    artista = models.CharField(max_length=100)
-    year = models.CharField(max_length=100)
-    album = models.CharField(max_length=100)
-    artista = models.CharField(max_length=100)
-    genero = models.CharField(max_length=100)
-    reprodu = models.IntegerField(default=0)
-    link = models.URLField(default = 'https://www.w3schools.com')
-    history = HistoricalRecords()
+
+class Reports(models.Model):
+    especie = models.CharField(max_length=100)
+    lugar = models.CharField(max_length=100)
+    region = models.CharField(max_length=100)
+    link = models.URLField(default = 'https://www.google.com')
+    ubicacion = models.URLField(default = 'https://www.google.com/maps/?hl=es')
+    
     
 
     class Meta:
-        db_table = "songs"
+        db_table = "Reportes"
         # app_label="Proyecto2
 
     def __str__(self):
         texto = "({0}) ({1}) ({2}) ({3}) ({4}) ({5}) "
-        return texto.format(self.name, self.album ,self.artista, self.year,  self.genero, self.reprodu)
+        return texto.format(self.especie, self.usuario ,self.lugar, self.region,  self.link, self.ubicacion)
 
 
-class ReproduccionesModel(models.Model):
-    id = models.IntegerField(primary_key=True)
-    name = models.CharField(max_length=100)
-    album = models.CharField(max_length=100)
-    genero = models.CharField(max_length=100)
-    artista = models.CharField(max_length=100)
-    fecha = models.DateField()
-    
+
+
+class Articulos(models.Model):
+    titulo = models.CharField(max_length=100)
+    autor = models.CharField(max_length=100)
+    enlace = models.CharField(max_length=100)
 
     class Meta:
-        db_table = "reproducciones"
-        # app_label="Proyecto2
-
-    def __str__(self):
-        texto = "({0}) ({1}) ({2}) ({3})"
-        return texto.format(self.name, self.album ,self.artista, self.fecha,)
-
-
-class PlaylistModel(models.Model):
-    user = models.CharField(max_length=100)
-    name = models.CharField(max_length=100)
-    genero = models.CharField(max_length=100)
-
-    class Meta:
-        db_table = 'playlist'
+        db_table = 'articulos'
 
     def __str__(self):
         texto = "({0}) ({1}) ({2})"
-        return texto.format(self.user, self.name ,self.genero,)
+        return texto.format(self.titulo, self.autor ,self.enlace)
     
