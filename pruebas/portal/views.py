@@ -83,11 +83,15 @@ def update(request, id):
     if form.is_valid():  
         form.save()  
         return redirect("edashboard")  
-    return render(request, 'artista/edit.html', {'song': song})  
+    return render(request, 'artista/edit.html', {'song': song}) 
+     
 def destroy(request, id):  
-    song = Reports.objects.get(id=id)  
-    song.delete()  
-    return redirect("edashboard")  
+    song = Reports.objects.get(id=id)
+    if request.method == "POST":
+        song.delete()  
+        return redirect("edashboard")  
+
+    return render(request,'artista/delete.html')
 
 #Tabla usuario suscrito
 
