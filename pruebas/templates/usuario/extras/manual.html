@@ -1,1 +1,87 @@
 {% extends "usuario/base.html" %}
+
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}Ayuda y Documentacion{% endblock %}</title>
+  {% load static %}
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+</head>
+{% block content %}
+<body style="background:#c5e1a5; background-size: cover; background-repeat: no-repeat; position: relative;">
+<div>
+<div class="row mt-5">
+<div style="font-size: 200%;">
+    <br />
+    <h1 style="color: #0033ff; font-size: 350%;">
+        Manual
+    </h1>
+    <br/>
+    <h3 style="font-size: 150%;">Información</h3>
+    <ol>
+        <li>Es importante informarse bien para así estar conscientes del problema que maneja el país con las especies invasoras.</li>
+        <li>AL ingresar a la página, se encontraría con una serie de pequeños contenedores.</li>
+        <li>Los contenedores tienen una imagén y un titulo, además de información breve</li>
+        <li>Al momento de encontrar información de interes en determinado container se podrá abrir el link para encontrar más información en las fuentes correspondientes.</li>
+    </ol>
+    <br/>
+    <h3 style="font-size: 150%;">Reporte</h3>
+    <ol>
+        <li>Es importante poder reportar a las especies invasoras con las autoridades pertinentes y así ellos sepan en qué lugares especificos tomas la acción correspondiente.</li>
+        <li>Al ingresar a la página, se encontrará con una tabla en la cual se podrá realizar el reporte que desea.</li>
+        <li>Para poder realizar el reporte se tiene que referir a la especie invasora relenando todos los campos.</li>
+        <li>En el apartado de Link se puede brindar un link de su dirección exacta de Google Maps u otra plataforma que acceda a la ubicación exacta.</li>        
+    </ol>
+    <br/>
+    <h3 style="font-size: 150%;">Contacto</h3>
+    <ol>
+        <li>En esta página se podrá tener acceso a diferentes contactos relacionados a las especies invasoras y esta plataforma web.</li>
+        <li>Se encuentran contactos de autoridades relacionadas a las especies invasoras para cualquier duda o emergencía sobre el tema. </li>
+        <li>Se encuentran los contactos de los desarrolladores que hicieron la página en caso de cualquier problema técnico relacionado a esta página.</li>
+        
+    </ol>
+    <br />
+    <h1 style="color: #0033ff; font-size: 150%; left: 50px;">
+        Preguntas frecuentes
+    </h1>
+    <br />
+    <h3 style="font-size: 150%;">¿Están seguros mis datos?</h3>
+    <br />
+    <p>Los únicos datos que se obtienen son los de las especies invasoras reportadas además de los datos ingresados para el registro, esto ya que no se cuenta con seguimiento de dirección ip para proteger la privacidad de los usuarios.</p>
+    <br />
+    <h3 style="font-size: 150%;">¿Las autoridades de reporte son confiables?</h3>
+    <br />
+    <p>Las autoridades a las que se reporta es el CONAP, la cual es una entidad pública que es reconocida por su trabajo efectivo con otros actores para asegurar la conservación y el correcto uso de areas protegidas en Guatemala.</p>
+    <br />
+    <h3 style="font-size: 150%;">¿Cómo puedo aportar más a la comunidad en este tipo de problemas?</h3>
+    <br />
+    <p>En la sección de contacto se puede encontrar con las entidades disponibles en la sección de contacto.</p>
+    <br />
+    <h3 style="font-size: 150%;">¿Cómo puede saber el especialista la ubicación de mi reporte?</h3>
+    <br />
+    <p>Al momento de hacer un reporte se puede ingresar un link directo de google maps en la ubicación exacta de donde ha ocurrido el avistamiento.</p>
+    <br />
+    <h3 style="font-size: 150%;">¿Cómo puede saber el especialista más información sobre la especie que quiero reportar?</h3>
+    <br />
+    <p>Se puede ingresar información extra que pueda ser utilidad al especialtista, mientras más detalles más exacta será la acción tomada.</p>
+    <br />
+</div>
+</div>
+</div>
+
+
+
+ 
+</div>
+</body>
+
+</html>
+{% endblock content %}

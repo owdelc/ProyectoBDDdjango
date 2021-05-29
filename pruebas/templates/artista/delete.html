@@ -3,14 +3,17 @@
 {% block title %}Add New Song{% endblock title %}
  
 {% block content %}
-<div class="col-md-12">
-    <h4>Reporte de especies</h4> 
+
+<body style="background: url(https://www.teahub.io/photos/full/114-1145779_photo-wallpaper-water-nature-pose-background-shore-insect.jpg); background-size: cover; background-repeat: no-repeat; position: relative;">
+<div class="col-md-12 text-light">
+    <h4 style="font-size:200%">Reporte de especies</h4> 
          
  <form method="POST" class="post-form" action="">  
    {% csrf_token %}  
-  <h1>¿Esta seguro de eliminar el reporte?</h1>
-  <input class='btn btn-danger' type="submit" value='Si'/>
-  <a href="{% url 'edashboard' %}"><div class='btn btn-primary'>Cancelar</div></a>
+  <h1 style="font-size:500%">¿Esta seguro de eliminar el reporte?</h1>
+  <input class='btn btn-danger btn-lg' style="font-size:200%"type="submit" value='Si'/>
+  <a href="{% url 'edashboard' %}"><div class='btn btn-primary btn-lg' style="font-size:200%">Cancelar</div></a>
  </form>  
 </div> 
+</body>
 {% endblock content %} 

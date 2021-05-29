@@ -7,35 +7,45 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Sign Up</title>
 </head>
-<body>
+<body style="background: url('https://swall.teahub.io/photos/small/200-2004738_net-winged-insects.jpg'); background-size: cover; background-repeat: no-repeat; position: relative;">
     <div class="container text-center p-5 mt-5">
         <form action="" method="POST">
             {% csrf_token %}
             <div>
-                <a style="color: white">Nomobre de usuario</a>
+                <a style="color: white; font-size: 200%;">Nombre de usuario</a>
             </div>
             {{form.username}}
             <div>
-                <a style="color: white">Se requieren 150 caracteres o menos. Letras, digitos y @.</a>
+                <a style="color: white; font-size: 80;">Se requieren 150 caracteres o menos. Letras, digitos y @.</a>
             </div>
             <div style="margin-top: 4;">
-                <a style="color: white">Contraseña</a>
+                <a style="color: white; font-size: 200%;">Contraseña</a>
             </div>
             {{form.password1}}
-            <div>
-                <a style="color: white">Tu contraseña no puede ser parecida a tu información personal.</a> <br />
-                <a style="color: white">Tu contraseña tiene que tener al menos 8 caracteres.</a> <br />
-                <a style="color: white">Tu contraseña no tiene que ser parecida a las que usas normalmente.</a> <br />
-                <a style="color: white">Tu contraseña no tiene que ser completamente numérica.</a>
-            </div>
+            
+            
             <div style="margin-top: 4;">
-                <a style="color: white">Confirma tu contraseña</a>
+                <a style="color: white; font-size: 200%;">Confirma tu contraseña</a>
             </div>
             {{form.password2}}
             <div>
-                <a style="color: white">Ingresa la misma contraseña de antes, para poder verificarla.</a>
+                <a style="color: white; font-size: 80;">Ingresa la misma contraseña de antes, para poder verificarla.</a>
             </div>
-            <button type="submit" class="btn-success">Sign Up</button>
+            <button type="submit" class="btn-success btn-lg mt-2">Registrarse</button>
+            <div style="padding-top: 5;">
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <a style="color: white; font-size: 80; padding-top: 5;">Tu contraseña no puede ser parecida a tu información personal.</a> <br />
+                <a style="color: white; font-size: 80;">Tu contraseña tiene que tener al menos 8 caracteres.</a> <br />
+                <a style="color: white; font-size: 80;">Tu contraseña no tiene que ser parecida a las que usas normalmente.</a> <br />
+                <a style="color: white; font-size: 80;">Tu contraseña no tiene que ser completamente numérica.</a>
+                <br/>
+                <br>
+            
+            </div>
         </form> 
         </div>
 </body>

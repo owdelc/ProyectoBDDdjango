@@ -33,6 +33,9 @@ urlpatterns = [
     path('update2/<int:id>', update2),  
     path('delete2/<int:id>', destroy2),
     path('informacion/',informaciont, name='informacion'),
+    path('contacto/',contacto, name="contacto"),
+    path('manual/', manual, name='manual'),
+    path('contactoo/', contacto2, name="contacto2")
 
 
 

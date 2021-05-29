@@ -136,4 +136,7 @@ def manual(request):
 
 def contacto(request):
     return render(request,'usuario/extras/contacto.html')
+
+def contacto2(request):
+    return render(request,'artista/extras/contacto.html')
 # Seccion de reporteria

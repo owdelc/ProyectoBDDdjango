@@ -15,19 +15,19 @@
 <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
 </head> 
 <body>
-   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <nav class="navbar navbar-expand-lg " style="background-color: #bcaaa4;">
       <div class="container">
       <a class="navbar-brand" href="#">
-          <img src="{% static 'logoCracks.png' %}" width="150" height="60" style="position:flex; top: 2000px " class="d-inline-block align-top" alt="">
+          <img src="{% static 'especiesLogo.png' %}" width="150" height="60" style="position:flex; top: 2000px " class="d-inline-block align-top" alt="">
         </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active p-5 mt-4" style="font-size: 200%;" href="{% url 'edashboard' %}">Dashboard <span class="sr-only">(current)</span></a>
-          
-          <a class="nav-item nav-link p-5 mt-4" style="font-size: 200%;" href="{% url 'logout' %}">Logout</a>
+          <a class="nav-item nav-link active p-5" style="font-size: 200%; color: #ffffff;" href="{% url 'edashboard' %}">Inicio <span class="sr-only">(current)</span></a>      
+          <a class="nav-item nav-link p-5" style="font-size: 200%; color: #ffffff;" href="{% url 'contacto2' %}">Contacto</a>   
+          <a class="nav-item nav-link p-5" style="font-size: 200%; color: #ffffff;" href="{% url 'logout' %}">Cerrar Sesion</a>
         </div>
       </div>
     </nav>
